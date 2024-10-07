@@ -2,65 +2,33 @@ body{
     color: white;
     background-color: #660e21;
 }
-#demo1, #demo2, #demo3,#demo4, #dm,#dm1,#dm2{
+#demo{
     font-size: 150px;
     text-align: center;
     margin-top: 8px;
     font-family: "Mountains of Christmas", serif;
     font-weight: 1000;
     font-style: normal;
-    transition: 0.5s;
 }
-/* #demo2{
-    animation: scale 3600s infinite;
-}
-#demo3{
-    animation: scale 60s infinite;
-}
-#demo4{
-    animation: scale 1s infinite;
-} */
-h1{
-    font-family: "Mountains of Christmas", serif;
-    font-weight: 1000;
-    font-style: normal;
-}
-#demome1, #demome2, #demome3, #demome4{
+#demome{
     margin-bottom: 0px;
+    text-align: center;
     font-family: "Mountains of Christmas", serif;
     font-weight: 700;
-    text-align: center;
     font-style: normal;
-    transition: 0.5s;
-}
-.days{
-    display: flex;
-}
-.flex{
-    display: flex;
 }
 .countdown{
     margin-top: 15%;
+
 }
 .christmastext{
     text-align: center;
 }
-/* @keyframes scale {
-    100%{
-        transform: scale(1.3);
-    }
-} */
 @media screen and (max-width:800px) {
-    #demo1, #demo2, #demo3,#demo4, #dm,#dm1,#dm2{
+    #demo{
         font-size: 55px;
     }
-    .days{
-        margin-left: 15%;
-    }
-    .days{
-        display: block;
-    }
-    #demome1, #demome2, #demome3, #demome4{
-        font-size: 20px;
+    #demome{
+        font-size: 25px;
     }
 }
