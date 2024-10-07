@@ -24,33 +24,23 @@ h1{
     font-style: normal;
     transition: 0.5s;
 }
-
+.days{
+    display: flex;
+}
 .flex{
     display: flex;
 }
 .countdown{
     margin-top: 15%;
-    margin-left: 25%;
 }
 .christmastext{
     text-align: center;
 }
-.days{
-    display: flex;
-    margin-left: 14%;
-}
 @media screen and (max-width:800px) {
-    #demo1,#demo2,#demo3,#demo4, #dm,#dm1,#dm2{
+    #demo1, #demo2, #demo3,#demo4, #dm,#dm1,#dm2{
         font-size: 55px;
     }
-    .days{
-        display: flex;
-        margin-left: -13%;
-    }
-    .countdown{
-        margin-left: 12%;
-    }
-    #demome{
-        font-size: 25px;
+    #demome1, #demome2, #demome3, #demome4{
+        font-size: 20px;
     }
 }
