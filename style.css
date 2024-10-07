@@ -45,7 +45,10 @@ h1{
     }
     .days{
         display: flex;
-        margin-left: -17%;
+        margin-left: -13%;
+    }
+    .countdown{
+        margin-left: 12%;
     }
     #demome{
         font-size: 25px;
