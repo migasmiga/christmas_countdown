@@ -2,31 +2,50 @@ body{
     color: white;
     background-color: #660e21;
 }
-#demo{
+#demo1, #demo2, #demo3,#demo4, #dm,#dm1,#dm2{
     font-size: 150px;
     text-align: center;
     margin-top: 8px;
     font-family: "Mountains of Christmas", serif;
     font-weight: 1000;
     font-style: normal;
+    transition: 0.5s;
 }
-#demome{
+h1{
+    font-family: "Mountains of Christmas", serif;
+    font-weight: 1000;
+    font-style: normal;
+}
+#demome1, #demome2, #demome3, #demome4{
     margin-bottom: 0px;
-    text-align: center;
     font-family: "Mountains of Christmas", serif;
     font-weight: 700;
+    text-align: center;
     font-style: normal;
+    transition: 0.5s;
+}
+
+.flex{
+    display: flex;
 }
 .countdown{
     margin-top: 15%;
-
+    margin-left: 25%;
 }
 .christmastext{
     text-align: center;
 }
+.days{
+    display: flex;
+    margin-left: 14%;
+}
 @media screen and (max-width:800px) {
-    #demo{
+    #demo1,#demo2,#demo3,#demo4, #dm,#dm1,#dm2{
         font-size: 55px;
+    }
+    .days{
+        display: flex;
+        margin-left: -13%;
     }
     #demome{
         font-size: 25px;
