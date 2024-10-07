@@ -26,7 +26,7 @@ body{
 }
 @media screen and (max-width:800px) {
     #demo{
-        font-size: 70px;
+        font-size: 60px;
     }
     #demome{
         font-size: 25px;
