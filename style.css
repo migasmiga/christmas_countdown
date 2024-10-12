@@ -103,7 +103,16 @@ button:hover{
     button{
         margin-left: 52px;
     }
-    
+    h4{
+        transition: 1s;
+        font-family: "Mountains of Christmas", serif;
+        text-orientation: upright;
+        color: green;
+        margin-left:60px;
+        margin-top:-60px;
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+    }
 }
 
 .hrka{
@@ -114,8 +123,20 @@ h4{
     font-family: "Mountains of Christmas", serif;
     text-orientation: upright;
     color: green;
-    margin-left:60px;
+    margin-left:110px;
     margin-top:-60px;
     writing-mode: vertical-rl;
     text-orientation: mixed;
+}
+@media screen and (max-width:800px) {
+    h4{
+        transition: 1s;
+        font-family: "Mountains of Christmas", serif;
+        text-orientation: upright;
+        color: green;
+        margin-left:60px;
+        margin-top:-60px;
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+    }
 }
