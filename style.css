@@ -103,6 +103,9 @@ button:hover{
     button{
         margin-left: 52px;
     }
+    button:hover{
+        transform: none;
+    }
     h4{
         transition: 1s;
         font-family: "Mountains of Christmas", serif;
