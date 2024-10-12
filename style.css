@@ -2,6 +2,10 @@ body{
     color: white;
     background-color: #660e21;
 }
+p{
+    font-family: 'Christmas   Classica', sans-serif;
+                                                
+}
 #demo{
     font-size: 150px;
     text-align: center;
@@ -25,13 +29,16 @@ body{
 }
 @media screen and (max-width:800px) {
     #demo{
-        font-size: 55px;
+        font-size: 70px;
     }
     #demome{
         font-size: 25px;
     }
     .countdown{
-        margin-top: 15%;
+        margin-top: 10%;
+    }
+    .hrka{
+        width: 50%;
     }
 }
 li{
@@ -84,4 +91,7 @@ button:hover{
     background-color: #660e21;
     color: white;
     transform: scale(1.1);
+}
+.hrka{
+    width:40%;
 }
