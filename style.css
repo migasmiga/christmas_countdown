@@ -30,8 +30,8 @@ body{
     #demome{
         font-size: 25px;
     }
-    .right{
-        margin-bottom: 100px;
+    .countdown{
+        magrin-top: 15%;
     }
 }
 li{
