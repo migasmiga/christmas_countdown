@@ -47,16 +47,16 @@ li{
     letter-spacing: 1px;
     padding-bottom: 3px;
     padding-top: 3px;
-    transition: 0.5s;
+    /* transition: 0.5s; */
     font-family: "Mountains of Christmas", serif;
 }
 .musicdiv{
     margin-top: -25px;
-    transition: 0.5s;
+    /* transition: 0.5s; */
 }
 .buble{
     display: block;
-    transition: 0.5s;
+    /* transition: 0.5s; */
 }
 .right{ 
     background-color: white;
@@ -79,7 +79,7 @@ li{
 audio{
     background-color: #660e21;
     width: 40px;
-    transition: 0.5s;
+    /* transition: 0.5s; */
     border-radius: 100%;
     margin-bottom: 20px;
     margin-left: 10px;
@@ -97,8 +97,8 @@ button{
 }
 button:hover{
     transition: 0.5s;
-    background-color: #660e21;
-    color: white;
+    /* background-color: #660e21;
+    color: white; */
     transform: scale(1.1);
 }
 @media screen and (max-width:800px){
@@ -112,6 +112,7 @@ button:hover{
     width:40%;
 }
 h4{
+    transition: 1s;
     font-family: "Mountains of Christmas", serif;
     text-orientation: upright;
     color: green;
