@@ -33,12 +33,11 @@ body{
     .countdown{
         margin-top: 15%;
     }
-}
-@media screen and (max-width:500px) {
-    button{
+        button{
         margin-left: 105px;
     }
 }
+
 li{
     list-style-type: none;
     letter-spacing: 1px;
