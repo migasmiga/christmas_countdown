@@ -28,6 +28,7 @@ p{
     text-align: center;
 }
 @media screen and (max-width:800px) {
+
     #demo{
         font-size: 70px;
     }
@@ -67,6 +68,14 @@ li{
     border-radius: 20px;
     margin-bottom: 5%;
 }
+@media screen and (max-width:800px){
+    .right{
+        width: 100px;
+        margin-left: -90px;
+    }
+    ul{margin-left: -20px;}
+    
+}
 audio{
     background-color: #660e21;
     width: 40px;
@@ -92,6 +101,22 @@ button:hover{
     color: white;
     transform: scale(1.1);
 }
+@media screen and (max-width:800px){
+    button{
+        margin-left: 50px;
+    }
+    
+}
+
 .hrka{
     width:40%;
+}
+h4{
+    font-family: "Mountains of Christmas", serif;
+    text-orientation: upright;
+    color: green;
+    margin-left:60px;
+    margin-top:-60px;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
 }

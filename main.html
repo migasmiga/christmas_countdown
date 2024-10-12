@@ -14,20 +14,32 @@
             <div id="right" class="right" onmouseover="slide()">
                 <ul>
                     <button id="button" onclick="slideout()">x</button>
+                    
                     <div class="musicdiv">
                         <li id="music" class="music">music</li>
                         <audio id="buble" class="buble" controls loop>
                             <source src="buble1.mp3" type="audio/mpeg">
                         </audio>
+                        
                     </div>
+                    <h4 id="tesk">music</h4>
+                    
                     <script>
                         function slide(){
                             document.getElementById("right").style.marginLeft='10px';
                             document.getElementById("button").style.visibility="visible";
+                            document.getElementById("tesk").style.display="none";
                         }
                         function slideout(){
-                            document.getElementById("right").style.marginLeft='-150px';
+                            let screen_width = window.innerWidth;
+                            if(screen_width < 800){
+                                document.getElementById("right").style.marginLeft='-90px';
+                            }
+                            else{
+                                document.getElementById("right").style.marginLeft='-150px';
+                            }
                             document.getElementById("button").style.visibility="hidden";
+                            document.getElementById("tesk").style.display="block";
                         }
                     </script>
                 </ul>
