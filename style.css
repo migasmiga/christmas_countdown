@@ -85,7 +85,7 @@ audio{
     margin-left: 10px;
 }
 button{
-    background-color: white;
+    background: none;
     color: #660e21;
     font-family: "Mountains of Christmas", serif;
     border: none;
@@ -97,11 +97,11 @@ button{
 }
 button:hover{
     transition: 0.5s;
-    transform: scale(1.1);
+    transform: scale(1.4);
 }
 @media screen and (max-width:800px){
     button{
-        margin-left: 50px;
+        margin-left: 52px;
     }
     
 }
