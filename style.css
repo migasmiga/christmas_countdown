@@ -30,7 +30,9 @@ body{
     #demome{
         font-size: 25px;
     }
-
+    .right{
+        margin-bottom: 10%;
+    }
 }
 li{
     list-style-type: none;
