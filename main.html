@@ -14,7 +14,7 @@
             <div id="right" class="right" onmouseover="slide()">
                 <ul>
                     <button id="button" onclick="slideout()">x</button>
-                    <div class="musicdiv" onmouseover="music()" onmouseout="musicoff()">
+                    <div class="musicdiv">
                         <li id="music" class="music">music</li>
                         <audio id="buble" class="buble" controls loop>
                             <source src="buble1.mp3" type="audio/mpeg">
@@ -28,12 +28,6 @@
                         function slideout(){
                             document.getElementById("right").style.marginLeft='-150px';
                             document.getElementById("button").style.visibility="hidden";
-                        }
-                        function music(){
-                            document.getElementById("buble").style.display="block";
-                        }
-                        function musicoff(){
-                            document.getElementById("buble").style.display="none";
                         }
                     </script>
                 </ul>

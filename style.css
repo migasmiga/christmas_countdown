@@ -47,7 +47,7 @@ li{
     transition: 0.5s;
 }
 .buble{
-    display: none;
+    display: block;
     transition: 0.5s;
 }
 .right{ 
