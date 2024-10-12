@@ -10,12 +10,31 @@
 
         </head>
         <body>
-            <audio autoplay loop>
-                <source src="buble1.mp3" type="audio/mpeg">
-                <source src="buble2.mp3" type="audio/mpeg">
-            </audio>
-<!-- style="background-image: url(bck.jpeg); background-repeat: no-repeat; background-size: 1500px;"-->
 
+            <div id="right" class="right" onmouseover="slide()" onmouseout="slideout()">
+                <ul>
+                    <div class="musicdiv" onmouseover="music()" onmouseout="musicoff()">
+                        <li id="music" class="music">music</li>
+                        <audio id="buble" class="buble" controls loop>
+                            <source src="buble1.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                    <script>
+                        function slide(){
+                            document.getElementById("right").style.marginLeft='10px';
+                        }
+                        function slideout(){
+                            document.getElementById("right").style.marginLeft='-150px';
+                        }
+                        function music(){
+                            document.getElementById("buble").style.display="block";
+                        }
+                        function musicoff(){
+                            document.getElementById("buble").style.display="none";
+                        }
+                    </script>
+                </ul>
+            </div>
     <div class="countdown">
         <h1 id="demome">
             Days  &nbsp&nbsp Hours &nbsp&nbsp  Minutes &nbsp&nbsp Seconds
@@ -24,7 +43,7 @@
     </div>
 
         <script>
-        var countDownDate = new Date("Dec 25, 2024 00:00:00").getTime();
+        var countDownDate = new Date("Dec 24, 2024 00:00:00").getTime();
         
 
         var x = setInterval(function() {
@@ -50,5 +69,6 @@
           }
         }, 1000);
         </script>
+
 </body>
 </html>

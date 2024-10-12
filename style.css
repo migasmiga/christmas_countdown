@@ -18,8 +18,7 @@ body{
     font-style: normal;
 }
 .countdown{
-    margin-top: 15%;
-
+    margin-top: 0%;
 }
 .christmastext{
     text-align: center;
@@ -31,4 +30,33 @@ body{
     #demome{
         font-size: 25px;
     }
+}
+li{
+    list-style-type: none;
+    letter-spacing: 1px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    transition: 0.5s;
+    font-family: "Mountains of Christmas", serif;
+}
+.buble{
+    display: none;
+    transition: 0.5s;
+}
+.right{ 
+    background-color: white;
+    color:#660e21;
+    margin-left: -150px;
+    height: 63px;
+    width: 180px;
+    transition: 0.5s;
+    border-radius: 20px;
+}
+audio{
+    background-color: #660e21;
+    width: 40px;
+    transition: 0.5s;
+    border-radius: 100%;
+    margin-bottom: 20px;
+    margin-left: 10px;
 }
