@@ -10,7 +10,7 @@
         <style> @import url('https://fonts.cdnfonts.com/css/christmas-classica'); </style>
         </head>
         <body>
-                
+            <script src="script.js" defer></script>
             <div id="right" class="right" onmouseover="slide()">
                 <ul>
                     <button id="button" onclick="slideout()">x</button>
@@ -23,64 +23,20 @@
                         
                     </div>
                     <h4 id="tesk">music</h4>
-                    
-                    <script>
-                        function slide(){
-                            document.getElementById("right").style.marginLeft='10px';
-                            document.getElementById("button").style.visibility="visible";
-                            document.getElementById("tesk").style.display="none";
-                        }
-                        function slideout(){
-                            let screen_width = window.innerWidth;
-                            if(screen_width < 800){
-                                document.getElementById("right").style.marginLeft='-90px';
-                            }
-                            else{
-                                document.getElementById("right").style.marginLeft='-150px';
-                            }
-                            document.getElementById("button").style.visibility="hidden";
-                            document.getElementById("tesk").style.display="block";
-                        }
-                    </script>
                 </ul>
             </div>
-            <p style="text-align: center; margin-top: -6%; font-size: 60px;">It's &nbsp only</p>
-            <hr class="hrka">
+
+        <p id="its-only" style="text-align: center; margin-top: -6%; font-size: 60px;">It's &nbsp only</p>
+        <hr class="hrka">
+
     <div class="countdown">
         <h1 id="demome">
             Days  &nbsp&nbsp Hours &nbsp&nbsp  Minutes &nbsp&nbsp Seconds
         </h1>
         <h1 id="demo"></h1>
     </div>
-
-        <script>
-        var countDownDate = new Date("Dec 24, 2024 00:00:00").getTime();
         
-
-        var x = setInterval(function() {
-        
-
-          var now = new Date().getTime();
-
-
-          var distance = countDownDate - now;
-
-          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-          document.getElementById("demo").innerHTML = days + "&nbsp| " + hours + "&nbsp| "
-          + minutes + "&nbsp| " + seconds + " ";
-
-          if (distance < 0) {
-            clearInterval(x);
-            document.getElementById("demo").innerHTML = "MERRY CHRISTMAS!";
-            document.getElementById("demome").style.display="none";
-          }
-        }, 1000);
-        </script>
         <hr class="hrka">
-        <p style="text-align: center; font-size: 60px;">left &nbsp  to &nbsp Christmas!</p>
+        <p id="left-to" style="text-align: center; font-size: 60px;">left &nbsp  to &nbsp Christmas!</p>
 </body>
 </html>
