@@ -1,0 +1,21 @@
+/* Basic style for the countdown elements */
+#days, #hours, #minutes, #seconds {
+    transition: transform 0.3s ease;  /* Smooth transition */
+}
+
+/* Style for the flex container */
+.flex1 {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Add this to ensure that the transformation works smoothly */
+#days, #hours, #minutes, #seconds {
+    display: inline-block;  /* Ensures transform works properly */
+}
+
+/* You can also customize the hover effect for the demo text elements */
+#demome1, #demome2, #demome3, #demome4 {
+    cursor: pointer;  /* Makes it clear that it's hoverable */
+}

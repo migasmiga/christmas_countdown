@@ -16,7 +16,13 @@ p{
 }
 
 
-
+#demome{
+    margin-bottom: 0px;
+    text-align: center;
+    font-family: "Mountains of Christmas", serif;
+    font-weight: 700;
+    font-style: normal;
+}
 /* 
 #days, #hours, #miuntes, #seconds{
     transition: 0.5s;
@@ -173,7 +179,7 @@ h4{
     font-family: "Mountains of Christmas", serif;
     font-weight: 1000;
     font-style: normal;
-    width: 40%;
+    width: 60%;
     margin-left: 30%;
     justify-content: center;
 }

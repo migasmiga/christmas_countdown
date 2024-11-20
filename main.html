@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+<!-- <!DOCTYPE HTML>
     <html>
         <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -30,7 +30,7 @@
         <hr class="hrka">
 
     <div class="countdown">
-        <div class="flex" style="display: flex;">
+         <div class="flex" style="display: flex;">
             <h1 id="demome1">
                 Days  &nbsp&nbsp
             </h1>
@@ -43,24 +43,112 @@
             <h1 id="demome4">
                 Seconds
             </h1>
-        </div>
-        <!-- <h1 id="demome">
+        </div> 
+        <h1 id="demome">
             Days  &nbsp&nbsp Hours &nbsp&nbsp  Minutes &nbsp&nbsp Seconds
-        </h1> -->
-        <div class="flex1" style="display: flex;">
+        </h1>
+         <div class="flex1" style="display: flex;">
             <div id="demo">
-            <h1 id="days">0</h1>
-            <h1 id="slash">&nbsp|</h1>
-            <h1 id="hours">0</h1>
-            <h1 id="slash">&nbsp|</h1>
-            <h1 id="minutes">0</h1>
-            <h1 id="slash">&nbsp|</h1>
-            <h1 id="seconds">0</h1>
-        </div>
+                <h1 id="days">0</h1>
+                <h1 id="slash">&nbsp|</h1>
+                <h1 id="hours">0</h1>
+                <h1 id="slash">&nbsp|</h1>
+                <h1 id="minutes">0</h1>
+                <h1 id="slash">&nbsp|</h1>
+                <h1 id="seconds">0</h1>
+            </div>
         </div>
     </div>
         
         <hr class="hrka">
         <p id="left-to" style="text-align: center; font-size: 60px;">left &nbsp  to &nbsp Christmas!</p>
+</body>
+</html> -->
+
+<!DOCTYPE HTML>
+    <html>
+        <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <title>Christmas Countdown</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&display=swap" rel="stylesheet">
+        <style> @import url('https://fonts.cdnfonts.com/css/christmas-classica'); </style>
+        </head>
+        <body>
+
+            <div id="right" class="right" onmouseover="slide()">
+                <ul>
+                    <button id="button" onclick="slideout()">x</button>
+                    
+                    <div class="musicdiv">
+                        <li id="music" class="music">music</li>
+                        <audio id="buble" class="buble" controls loop>
+                            <source src="buble1.mp3" type="audio/mpeg">
+                        </audio>
+                        
+                    </div>
+                    <h4 id="tesk">music</h4>
+                    
+                    <script>
+                        function slide(){
+                            document.getElementById("right").style.marginLeft='10px';
+                            document.getElementById("button").style.visibility="visible";
+                            document.getElementById("tesk").style.display="none";
+                        }
+                        function slideout(){
+                            document.getElementById("right").style.marginLeft='-150px';
+                            let screen_width = window.innerWidth;
+                            if(screen_width < 800){
+                                document.getElementById("right").style.marginLeft='-90px';
+                            }
+                            else{
+                                document.getElementById("right").style.marginLeft='-150px';
+                            }
+                            document.getElementById("button").style.visibility="hidden";
+                            document.getElementById("tesk").style.display="block";
+                        }
+                    </script>
+                </ul>
+            </div>
+            <p style="text-align: center; margin-top: -6%; font-size: 60px;">It's &nbsp only</p>
+            <hr class="hrka">
+    <div class="countdown">
+        <h1 id="demome">
+            Days  &nbsp&nbsp Hours &nbsp&nbsp  Minutes &nbsp&nbsp Seconds
+        </h1>
+        <h1 id="demo"></h1>
+    </div>
+
+        <script>
+        var countDownDate = new Date("Dec 24, 2024 00:00:00").getTime();
+
+
+        var x = setInterval(function() {
+
+
+          var now = new Date().getTime();
+
+
+          var distance = countDownDate - now;
+
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+          document.getElementById("demo").innerHTML = days + "&nbsp| " + hours + "&nbsp| "
+          + minutes + "&nbsp| " + seconds + " ";
+
+          if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "MERRY CHRISTMAS!";
+            document.getElementById("demome").style.display="none";
+          }
+        }, 1000);
+        </script>
+        <hr class="hrka">
+        <p style="text-align: center; font-size: 60px;">left &nbsp  to &nbsp Christmas!</p>
 </body>
 </html>

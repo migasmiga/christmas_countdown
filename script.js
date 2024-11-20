@@ -8,13 +8,19 @@ var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
 var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
 var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-document.getElementById("demo").innerHTML = days + "&nbsp| " + hours + "&nbsp| "
-+ minutes + "&nbsp| " + seconds + " ";
+document.getElementById("days").innerHTML = days;
+document.getElementById("hours").innerHTML = hours;
+document.getElementById("minutes").innerHTML = minutes;
+document.getElementById("seconds").innerHTML = seconds;
 
 if (distance < 0) {
 clearInterval(x);
 document.getElementById("demo").innerHTML = "MERRY CHRISTMAS!";
-document.getElementById("demome").style.display="none";
+document.getElementById("demome1").style.display="none";
+document.getElementById("demome2").style.display="none";
+document.getElementById("demome3").style.display="none";
+document.getElementById("demome4").style.display="none";
+document.getElementById("slash").style.display="none";
 }
 }, 1000);
 
@@ -79,3 +85,52 @@ count.addEventListener("copy", function(event){
         window.clipboardData.setData('Text', customText);
     }
 })
+// working on this
+
+// const demome1 = document.getElementById("demome1");
+// const demome2 = document.getElementById("demome2");
+// const demome3 = document.getElementById("demome3");
+// const demome4 = document.getElementById("demome4");
+
+// const days = document.getElementById("days");
+// const hours = document.getElementById("hours");
+// const minutes = document.getElementById("minutes");
+// const seconds = document.getElementById("seconds");
+// document.addEventListener("DOMContentLoaded", function() {
+// function addScaleEffect(element) {
+//     element.style.transform = "scale(1.1)";
+// }
+
+// function removeScaleEffect(element) {
+//     element.style.transform = "scale(1)";
+// }
+
+
+// demome1.addEventListener("mouseover", function() {
+//     addScaleEffect(days);
+// });
+// demome1.addEventListener("mouseout", function() {
+//     removeScaleEffect(days);
+// });
+
+// demome2.addEventListener("mouseover", function() {
+//     addScaleEffect(hours);
+// });
+// demome2.addEventListener("mouseout", function() {
+//     removeScaleEffect(hours);
+// });
+
+// demome3.addEventListener("mouseover", function() {
+//     addScaleEffect(minutes);
+// });
+// demome3.addEventListener("mouseout", function() {
+//     removeScaleEffect(minutes);
+// });
+
+// demome4.addEventListener("mouseover", function() {
+//     addScaleEffect(seconds);
+// });
+// demome4.addEventListener("mouseout", function() {
+//     removeScaleEffect(seconds);
+// });
+// });
