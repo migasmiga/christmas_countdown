@@ -168,9 +168,6 @@ h4{
     .flex{
         gap: 10px;
     }
-    #demo{
-        margin-top: -50px;
-    }
 }
 .flex1{
     font-size: 80px;
