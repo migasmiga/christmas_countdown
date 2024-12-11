@@ -183,3 +183,144 @@ h4{
     margin-left: 30%;
     justify-content: center;
 }
+@keyframes fall {
+    to {
+      transform: translateY(900px);
+    }
+  }
+  .fall {
+    z-index: 0;
+    position: absolute;
+    margin-top: -10%;
+  }
+  .fall2 {
+    z-index: 0;
+    position: absolute;
+    margin-top: -65%;
+    margin-left: 75%;
+  }
+  .snowFlakes1,
+  .snowFlakes2,
+  .snowFlakes3,
+  .snowFlakes4,
+  .snowFlakes5,
+  .snowFlakes6,
+  .snowFlakes7,
+  .snowFlakes8,
+  .snowFlakes9,
+  .snowFlakes10 
+  .snowFlakes11,
+  .snowFlakes12,
+  .snowFlakes13,
+  .snowFlakes14,
+  .snowFlakes15,
+  .snowFlakes16,
+  .snowFlakes17,
+  .snowFlakes18,
+  .snowFlakes19,
+  .snowFlakes20{
+    background-color: #fff;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+  }
+  .snowFlakes1 {
+    animation: 9s linear infinite fall;
+    left: 80px;
+    opacity: 0.6;
+  }
+  .snowFlakes2 {
+    animation: 8s linear infinite fall;
+    left: 140px;
+    transform: scale(2.2);
+  }
+  .snowFlakes3 {
+    animation: 8s linear infinite fall;
+    left: 70px;
+    opacity: 0.6;
+  }
+  .snowFlakes4 {
+    animation: 12s linear infinite fall;
+    left: 40px;
+    transform: scale(1.8);
+    opacity: 0.6;
+  }
+  .snowFlakes5 {
+    animation: 12.5s linear infinite fall;
+    left: 190px;
+  }
+  .snowFlakes6 {
+    animation: 7s linear infinite fall;
+    left: 220px;
+    opacity: 0.6;
+  }
+  .snowFlakes7 {
+    animation: 16s linear infinite fall;
+    left: 250px;
+    transform: scale(2);
+  }
+  .snowFlakes8 {
+    animation: 6s linear infinite fall;
+    left: 30px;
+    opacity: 0.6;
+  }
+  .snowFlakes9 {
+    animation: 10s linear infinite fall;
+    left: 130px;
+  }
+  .snowFlakes10 {
+    animation: 8s linear infinite fall;
+    left: 230px;
+    opacity: 0.6;
+  }
+  .snowFlakes11 {
+    animation: 9s linear infinite fall;
+    left: 10px;
+    opacity: 0.6;
+  }
+  .snowFlakes12 {
+    animation: 8s linear infinite fall;
+    left: 260px;
+    transform: scale(2.2);
+  }
+  .snowFlakes13 {
+    animation: 8s linear infinite fall;
+    left: 20px;
+    opacity: 0.6;
+  }
+  .snowFlakes14 {
+    animation: 12s linear infinite fall;
+    left: 290px;
+    transform: scale(1.8);
+    opacity: 0.6;
+  }
+  .snowFlakes15 {
+    animation: 7.5s linear infinite fall;
+    left: 20px;
+  }
+  .snowFlakes16 {
+    animation: 5s linear infinite fall;
+    left: 300px;
+    opacity: 0.6;
+  }
+  .snowFlakes17 {
+    animation: 14s linear infinite fall;
+    left: 275px;
+    transform: scale(2);
+  }
+  .snowFlakes18 {
+    animation: 4s linear infinite fall;
+    left: 25px;
+    opacity: 0.6;
+  }
+  .snowFlakes19 {
+    animation: 17s linear infinite fall;
+    left: 142px;
+  }
+  .snowFlakes20 {
+    animation: 6s linear infinite fall;
+    left: 15px;
+    opacity: 0.6;
+  }
+  
