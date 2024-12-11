@@ -15,12 +15,8 @@ document.getElementById("seconds").innerHTML = seconds;
 
 if (distance < 0) {
 clearInterval(x);
-document.getElementById("demo").innerHTML = "MERRY CHRISTMAS!";
-document.getElementById("demome1").style.display="none";
-document.getElementById("demome2").style.display="none";
-document.getElementById("demome3").style.display="none";
-document.getElementById("demome4").style.display="none";
-document.getElementById("slash").style.display="none";
+window.location.href = "https://merrychristmas.pl";
+document.getElementById("demome").style.display="none";
 }
 }, 1000);
 

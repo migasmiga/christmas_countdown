@@ -42,7 +42,7 @@ p{
         font-size: 70px;
     }
     #demome{
-        font-size: 20px;
+        font-size: 25px;
     }
     .countdown{
         margin-top: 10%;
@@ -167,6 +167,9 @@ h4{
 @media screen and (max-width:800px) {
     .flex{
         gap: 10px;
+    }
+    #demo{
+        margin-top: -50px;
     }
 }
 .flex1{
